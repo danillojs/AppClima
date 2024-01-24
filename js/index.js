@@ -10,6 +10,13 @@ let temp_number = document.querySelector(".container_temp div");
 let temp_unit = document.querySelector(".container_temp span");
 const trick = document.querySelector(".trick");
 
+// Standby antes da pagina carregar.
+var i = setInterval(function () {
+    clearInterval(i);
+    document.querySelector(".pre_page").style.display = "none";
+    document.querySelector(".full_page").style.display = "inline";
+}, 4000);
+
 /* Verifica se o botão de aviso foi clicado 
    armazenando a informação no localStorage. Caso
    já tenha sido clicado, o botão não será exibido

@@ -18,6 +18,21 @@ body {
     background-repeat: no-repeat;
 }
 
+.pre_page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lato", Sans-Serif;
+    font-size: 40px;
+}
+
+.full_page {
+    display: none;
+    transition: 1s linear;
+}
+
 /* Botão de aviso para adicionar à tela inicial*/
 .trick {
     font-size: 40px;

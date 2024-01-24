@@ -14,86 +14,89 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body id="bg">
-
-    <button class="trick" onclick="showBarInfo()" type="submit">
-        <i class="fas fa-question"></i>
-        <p class="txt">
-            Adicione o site na sua tela inicial &#128522;
-        </p>
-    </button>
-
-    <div class="back"></div>
-    <div id="contain" class="container">
-        <input type="text" class="search" placeholder="digite o nome da cidade" aria-label="Recipient's username" aria-describedby="button-addon2">
-        
-        <div class="card-contain">
-            <div class="card">
-                <div class="city">
-                    ...
-                </div>
-                <div class="date">
-                    ...
-                </div>
-                <div class="contain_cloud">
-                    <img class="cloud" src="/icons/unknown.png" alt="cloud" />
-                </div>
-                <div class="container_temp">
-                    <div class="temperature">
-                        22
+<body>
+    
+    <div class="pre_page"><p>CLIMA</p></div>
+    <div class="full_page">
+        <button class="trick" onclick="showBarInfo()" type="submit">
+            <i class="fas fa-question"></i>
+            <p class="txt">
+                Adicione o site na sua tela inicial &#128522;
+            </p>
+        </button>
+    
+        <div class="back"></div>
+        <div id="contain" class="container">
+            <input type="text" class="search" placeholder="digite o nome da cidade" aria-label="Recipient's username" aria-describedby="button-addon2">
+            
+            <div class="card-contain">
+                <div class="card">
+                    <div class="city">
+                        ...
                     </div>
-                    <span>°</span>
-                </div>
-                <div class="weather py-2">
-                    <p>
-                        Nublado
-                    </p>
-                </div>
-                <div class="low-high">
-                    22°c / 23°c
-                </div>
-                
-                <div class="info_icons">
-                    <div class="contain_icons">
-                        <div class="info">
-                            <div id="item">
-                                <img id="imgLength" class="umbrella" src="/assets/umbrella_w.png" alt="" />
-                            </div>
-                            <div id="item">
-                                <img id="imgLength" class="cloud_img" src="/assets/cloud_w.png" alt="" />
-                            </div>
-                            <div id="item">
-                                <img id="imgLength" class="img_wind" src="/assets/wind_w.png" alt="" />
-                            </div>
-                            <div id="item">
-                                <img id="imgLength" class="thermal" src="/assets/thermal_w.png" alt="" />
-                            </div>
+                    <div class="date">
+                        ...
+                    </div>
+                    <div class="contain_cloud">
+                        <img class="cloud" src="/icons/unknown.png" alt="cloud" />
+                    </div>
+                    <div class="container_temp">
+                        <div class="temperature">
+                            22
                         </div>
+                        <span>°</span>
+                    </div>
+                    <div class="weather py-2">
+                        <p>
+                            Nublado
+                        </p>
+                    </div>
+                    <div class="low-high">
+                        22°c / 23°c
                     </div>
                     
-                    <div class="info i">
-                        <div id="item">
-                            <p class="humidity">
-                                0
-                            </p>
+                    <div class="info_icons">
+                        <div class="contain_icons">
+                            <div class="info">
+                                <div id="item">
+                                    <img id="imgLength" class="umbrella" src="/assets/umbrella_w.png" alt="" />
+                                </div>
+                                <div id="item">
+                                    <img id="imgLength" class="cloud_img" src="/assets/cloud_w.png" alt="" />
+                                </div>
+                                <div id="item">
+                                    <img id="imgLength" class="img_wind" src="/assets/wind_w.png" alt="" />
+                                </div>
+                                <div id="item">
+                                    <img id="imgLength" class="thermal" src="/assets/thermal_w.png" alt="" />
+                                </div>
+                            </div>
                         </div>
-                        <div id="item">
-                            <p class="clouds">
-                                0
-                            </p>
+                        
+                        <div class="info i">
+                            <div id="item">
+                                <p class="humidity">
+                                    0
+                                </p>
+                            </div>
+                            <div id="item">
+                                <p class="clouds">
+                                    0
+                                </p>
+                            </div>
+                            <div id="item">
+                                <p class="wind">
+                                    0
+                                </p>
+                            </div>
+                            <div id="item">
+                                <p class="thermal_value">
+                                    0
+                                </p>
+                            </div>
                         </div>
-                        <div id="item">
-                            <p class="wind">
-                                0
-                            </p>
-                        </div>
-                        <div id="item">
-                            <p class="thermal_value">
-                                0
-                            </p>
-                        </div>
+                        
                     </div>
-                    
                 </div>
             </div>
         </div>
