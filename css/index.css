@@ -1,0 +1,274 @@
+
+/* fonte importada do google */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+/* Configurações globais */
+* {
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+    color: white;
+}
+
+/* Configurações do background */
+body {
+    background-image: url('/assets/bg2.gif');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Botão de aviso para adicionar à tela inicial*/
+.trick {
+    font-size: 40px;
+    position: fixed;
+    right: 0.1px;
+    top: 50px;
+    background-color: #00234c;
+    width: 60px;
+    height: 80px;
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: 1s;
+    z-index: 3;
+}
+
+/* Icone de interrogação */
+.fa-question {
+    font-size: 40px;
+}
+
+/* Conteúdo do botão de aviso */
+.txt {
+    display: none;
+    font-size: 15px;
+    justify-content: center;
+    font-family: "Lato", Sans-Serif;
+}
+
+/* Fundo escuro por cima do background */
+.back {
+    background-color: black;
+    position: absolute;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -4;
+    opacity: 0.7;
+}
+
+/* Icones do clima que mudam de acordo 
+com as condições*/
+.cloud {
+    width: 150px;
+    height: 150px;
+}
+
+/* Todo o conteúdo do cartão e do input */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+/* Cartão onde ficam todas as informações */
+.card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -120px;
+    height: 470px;
+    width: 300px;
+    border-radius: 60px;
+    box-shadow: 6px 6px 10px 1px black;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* Input de pesquisa de região */
+.search {
+    width: 80%;
+    height: 40px;
+    margin-top: 20px;
+    border: solid 1px white;
+    background-color: transparent;
+    border-radius: 30px;
+    color: white;
+    transition: 2s;
+}
+.search:hover {
+    box-shadow: 1px 1px 10px 2px white;
+}
+/*---------------------*/
+
+/* Container inteiro do cartão */
+.card-contain {
+    display: flex;
+    width: 100%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+/* Mostra o nome da cidade*/
+.city {
+    font-family: "Lato", Sans-Serif;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Mostra o dia da semana, dia do mês, 
+mês e ano*/
+.date {
+    font-size: 15px;
+    font-family: "Lato", Sans-Serif;
+}
+
+/* Container onde mostra a temperatura */
+.container-temp {
+    height: 110px;
+}
+.temperature {
+    font-size: 100px;
+    display: inline;
+    margin: 0 auto;
+    font-family: 'Arimo', Sans-Serif;
+}
+/*-------------------*/
+
+/* Unidades de Medidas km/h, Grau */
+span {
+    position: relative;
+    font-size: 60px;
+    right: 0;
+    top: 0;
+}
+
+/* Mostra o clima atual */
+.weather {
+    font-size: 25px;
+    padding-top: 15px;
+    font-family: "Lato", Sans-Serif;
+}
+.low-high {
+    padding: 7px;
+}
+/*---------------*/
+
+/* Container dos icones de informações */
+.contain_icons {
+    width: 100%;
+}
+
+/* Icones de informações */
+.info_icons {
+    width: 100%;
+    font-size: 15px;
+}
+
+/* Informações abaixo dos icones */
+.i {
+    height: 70px;
+}
+.info {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    background-color: #111111a1;
+}
+/*------------------*/
+
+/* Icone do vento */
+.img_wind {
+    width: 30px;
+    height: 30px;
+}
+
+/* Icone do guarda chuva */
+.umbrella {
+    width: 30px;
+    height: 30px;
+}
+
+/* Icone da nuvem */
+.cloud_img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Icone da temperatura */
+.thermal {
+    width: 30px;
+    height: 30px;
+}
+
+/* Configuração global para todos os icones */
+#item {
+    height: 100%;
+    width: 100%;
+    font-size: 12px;
+    padding-top: 6px;
+}
+
+#imgLength {
+    width: 20px;
+    height: 20px;
+}
+
+/*------ Animações -------*/
+@keyframes anim {
+    to {
+        transform: rotate(-500deg);
+        opacity: 0;
+    }
+}
+@keyframes anim2 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes hide {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+/*---------------------*/
+
+
+/*---- Configurações de responsividade ----*/
+@media (min-width: 768px) {
+    .card {
+        height: 650px;
+        width: 450px;
+    }
+    .contain_icons {
+        padding-top: 4px;
+    }
+    .weather {
+        padding-top: 200px;
+    }
+}
+@media (min-width: 1024px) {
+    .card {
+        margin-top: 20px;
+    }
+    .search {
+        width: 60%;
+    }
+}
+/*--------------------*/
